@@ -27,7 +27,7 @@ get-orig-source:
 		-czf $(CURDIR)/../$(TARNAME) $(ORIGDIR)
 	rm -rf $(ORIGDIR)
 
-build:
+build-arch:
 	$(PMAKE) -C libexec/rpc.rquotad
 	$(PMAKE) -C sbin/quotacheck
 	$(PMAKE) -C usr.bin/quota
