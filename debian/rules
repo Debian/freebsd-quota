@@ -27,6 +27,8 @@ get-orig-source:
 		-czf $(CURDIR)/../$(TARNAME) $(ORIGDIR)
 	rm -rf $(ORIGDIR)
 
+build-indep:
+
 build-arch:
 	$(PMAKE) -C libexec/rpc.rquotad
 	$(PMAKE) -C sbin/quotacheck
@@ -34,6 +36,8 @@ build-arch:
 	$(PMAKE) -C usr.sbin/edquota
 	$(PMAKE) -C usr.sbin/quotaon
 	$(PMAKE) -C usr.sbin/repquota
+
+build: build-indep build-arch
 
 override_dh_auto_clean:
 	$(PMAKE) -C libexec/rpc.rquotad clean
