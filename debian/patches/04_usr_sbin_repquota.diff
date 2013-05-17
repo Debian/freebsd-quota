@@ -15,13 +15,3 @@ Last-Update: 2011-01-20
  WARNS?=	4
  
  .include <bsd.prog.mk>
---- freebsd-8.1.orig/usr.sbin/repquota/repquota.c	2010-06-14 04:09:06.000000000 +0200
-+++ freebsd-8.1/usr.sbin/repquota/repquota.c	2011-01-20 19:28:35.000000000 +0100
-@@ -58,6 +58,7 @@
- #include <stdio.h>
- #include <stdlib.h>
- #include <string.h>
-+#include <bsd/string.h>
- #include <time.h>
- #include <unistd.h>
- #include <utmp.h>
