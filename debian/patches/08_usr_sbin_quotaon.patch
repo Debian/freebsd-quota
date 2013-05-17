@@ -1,0 +1,15 @@
+---
+ usr.sbin/quotaon/Makefile |    2 ++
+ 1 file changed, 2 insertions(+)
+
+--- a/usr.sbin/quotaon/Makefile
++++ b/usr.sbin/quotaon/Makefile
+@@ -6,6 +6,8 @@ LINKS=	${BINDIR}/quotaon ${BINDIR}/quota
+ MAN=	quotaon.8
+ MLINKS=	quotaon.8 quotaoff.8
+ 
++LDADD= -lbsd
++
+ WARNS?=	4
+ 
+ .include <bsd.prog.mk>

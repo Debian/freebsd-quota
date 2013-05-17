@@ -5,3 +5,4 @@
 05_libexec_rquotad.diff
 06_manpage_quotacheck.diff
 07_cdevname.diff
+08_usr_sbin_quotaon.patch
