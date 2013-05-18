@@ -13,7 +13,7 @@ CFLAGS = $(shell dpkg-buildflags --get CPPFLAGS) -I. -D_GNU_SOURCE \
          $(shell dpkg-buildflags --get CFLAGS) -Wall -pipe -fPIC \
          $(shell pkg-config --cflags libbsd-overlay)
 LDFLAGS = $(shell dpkg-buildflags --get LDFLAGS)
-PMAKE = COPTS="$(CFLAGS)" CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" \
+PMAKE = CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" \
         NO_WERROR=1 NOGCCERROR=1 NOSHARED=NO NO_SHARED=NO \
         DESTDIR=$(DESTDIR) make
 
