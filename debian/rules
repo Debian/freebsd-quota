@@ -78,6 +78,7 @@ binary-arch: install-arch
 	dh_testdir -a
 	dh_testroot -a
 	dh_link -a
+	dh_lintian -a
 	dh_strip -a
 	dh_compress -a
 	dh_fixperms -a
