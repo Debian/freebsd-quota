@@ -1,6 +1,7 @@
 freebsd-quota (8.2-3) UNRELEASED; urgency=low
 
   * Update copyright years.
+  * Remove myself from Uploaders.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 19 Oct 2013 06:24:16 +0200
 
