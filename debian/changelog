@@ -1,9 +1,10 @@
-freebsd-quota (8.2-3) UNRELEASED; urgency=low
+freebsd-quota (8.2-3) unstable; urgency=low
 
+  * Team upload.
   * Update copyright years.
   * Remove myself from Uploaders.
 
- -- Guillem Jover <guillem@debian.org>  Sat, 19 Oct 2013 06:24:16 +0200
+ -- Guillem Jover <guillem@debian.org>  Sat, 19 Oct 2013 06:25:42 +0200
 
 freebsd-quota (8.2-2) unstable; urgency=low
 
