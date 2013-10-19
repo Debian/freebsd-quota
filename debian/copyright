@@ -69,7 +69,7 @@ License: BSD-3-clause
 Files: debian/*
 Copyright: 2011, Mats Erik Andersson <debian@gisladisker.se>
            2011, Petr Salinger <petr.salinger@seznam.cz>
-           2011, Guillem Jover <guillem@debian.org>
+           2011,2013, Guillem Jover <guillem@debian.org>
 License: BSD-2-clause
 
 License: BSD-4-clause
