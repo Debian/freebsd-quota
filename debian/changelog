@@ -1,3 +1,9 @@
+freebsd-quota (8.2-4) UNRELEASED; urgency=low
+
+  * Fetch source code securely (https) in get-orig-source.
+
+ -- Robert Millan <rmh@debian.org>  Sat, 07 Dec 2013 23:22:56 +0100
+
 freebsd-quota (8.2-3) unstable; urgency=low
 
   * Team upload.
