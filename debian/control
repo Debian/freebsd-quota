@@ -6,6 +6,8 @@ Uploaders: Mats Erik Andersson <mats.andersson@gisladisker.se>
 Build-Depends: debhelper (>= 9), freebsd-buildutils, pkg-config,
  libbsd-dev (>= 0.4.0), libc0.1-dev (>= 2.10.1) [kfreebsd-any]
 Standards-Version: 3.9.4
+Vcs-Browser: https://salsa.debian.org/kfreebsd-team/freebsd-quota
+Vcs-Git: https://salsa.debian.org/kfreebsd-team/freebsd-quota.git
 
 Package: freebsd-quota
 Architecture: kfreebsd-any
