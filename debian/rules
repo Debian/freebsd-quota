@@ -2,7 +2,7 @@
 
 SOURCE = freebsd-quota
 VERSION = $(shell dpkg-parsechangelog | sed -n '/^Version/ {s/.*: //; s/-.*//; p;}')
-SVNLOC = "https://svn0.us-west.freebsd.org/base/release/$(VERSION).0"
+SVNLOC = "https://svn.freebsd.org/base/release/$(VERSION).0"
 
 PATH := /usr/lib/freebsd:$(PATH)
 DESTDIR = $(CURDIR)/debian/tmp
