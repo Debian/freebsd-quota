@@ -7,7 +7,7 @@ SVNLOC = "https://svn0.us-west.freebsd.org/base/release/$(VERSION).0"
 PATH := /usr/lib/freebsd:$(PATH)
 DESTDIR = $(CURDIR)/debian/tmp
 ORIGDIR = $(SOURCE)-$(VERSION)
-TARNAME = $(SOURCE)_$(VERSION).orig.tar.gz
+TARNAME = $(SOURCE)_$(VERSION).orig.tar.xz
 
 CFLAGS = $(shell dpkg-buildflags --get CPPFLAGS) -I. -D_GNU_SOURCE \
          $(shell dpkg-buildflags --get CFLAGS) -Wall -pipe -fPIC \
@@ -36,7 +36,7 @@ get-orig-source:
 		svn export $(SVNLOC)/$$nn $(ORIGDIR)/$$nn; \
 	done
 	tar --numeric-owner --owner 0 --group 0 \
-		-czf $(CURDIR)/../$(TARNAME) $(ORIGDIR)
+		-cJf $(CURDIR)/../$(TARNAME) $(ORIGDIR)
 	rm -rf $(ORIGDIR)
 
 build-indep:
